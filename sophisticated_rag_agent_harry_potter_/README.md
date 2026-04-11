@@ -27,7 +27,7 @@ $ conda create -n myenv312 python=3.12.12
 3. Activate the environment:
 
 ```bash
-$ conda activate mini-rag
+$ conda activate myenv312
 ```
 
 ### (Optional) Setup you command line interface for better readability
