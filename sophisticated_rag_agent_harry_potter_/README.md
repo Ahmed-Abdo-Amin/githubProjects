@@ -17,10 +17,36 @@ The system is capable of planning, breaking down tasks, retrieving relevant cont
 
 ### Install Miniconda
 
-Download and install Miniconda from [here](https://docs.conda.io/en/latest/miniconda.html).  
+1. Download and install Miniconda from [here](https://docs.conda.io/en/latest/miniconda.html).  
 
-Create a new environment using the following command:
+2. Create a new environment using the following command:
 
 ```bash
-conda create -n myenv312 python=3.12.12
+$ conda create -n myenv312 python=3.12.12
 ```
+3. Activate the environment:
+
+```bash
+$ conda activate mini-rag
+```
+
+### (Optional) Setup you command line interface for better readability
+
+```bash
+$ export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
+```
+
+##  Installation
+
+### Install the required packages
+
+```bash
+$ pip install -r requirements.txt
+```
+
+### Setup the environment variables
+
+```bash
+$ cp .env.example .env
+```
+Set your environment variables in the .env file. Like OPENAI_API_KEY value.
