@@ -36,6 +36,7 @@ $ conda activate myenv312
 $ export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "
 ```
 
+
 ##  Installation
 
 ### Install the required packages
@@ -50,6 +51,26 @@ $ pip install -r requirements.txt
 $ cp .env.example .env
 ```
 Set your environment variables in the .env file. Like OPENAI_API_KEY value.
+
+## Run Docker Compose Services
+
+```bash
+$ cd docker
+```
+
+```bash
+$ cp .env.example .env
+```
+
+### update .env with your credentials
+
+```bash
+$ cd docker
+```
+
+```bash
+$ sudo docker compose up -d
+```
 
 ## Run the FastAPI server
 
